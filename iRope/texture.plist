@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>alien.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{24, 25}, {62, 99}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 3}</string>
+			<key>spriteSize</key>
+			<string>{62, 99}</string>
+			<key>spriteSourceSize</key>
+			<string>{104, 155}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{212, 0}, {62, 99}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>alien2.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {76, 100}}</string>
+			<key>spriteOffset</key>
+			<string>{-2, -0}</string>
+			<key>spriteSize</key>
+			<string>{76, 100}</string>
+			<key>spriteSourceSize</key>
+			<string>{80, 100}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{134, 0}, {76, 100}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>max-baloon.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 6}, {132, 136}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{132, 136}</string>
+			<key>spriteSourceSize</key>
+			<string>{138, 146}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {132, 136}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>plate.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{1, 7}, {134, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{134, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{136, 68}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{134, 102}, {134, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>rope.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 1}, {16, 6}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{16, 6}</string>
+			<key>spriteSourceSize</key>
+			<string>{16, 8}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 138}, {16, 6}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<string>1.5.2</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{512, 512}</string>
+		<key>name</key>
+		<string>texture.zwd</string>
+		<key>premultipliedAlpha</key>
+		<false/>
+		<key>target</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>textureFileName</key>
+			<string>texture</string>
+			<key>textureFileExtension</key>
+			<string>.png</string>
+			<key>coordinatesFileName</key>
+			<string>texture</string>
+			<key>coordinatesFileExtension</key>
+			<string>.plist</string>
+			<key>premultipliedAlpha</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>

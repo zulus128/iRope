@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDBB000614A6EE6900933A37 /* B2DSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDBB000514A6EE6800933A37 /* B2DSprite.mm */; };
+		DDBBFFF114A6E30900933A37 /* texture.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDBBFFEE14A6E30900933A37 /* texture.plist */; };
+		DDBBFFF214A6E30900933A37 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = DDBBFFEF14A6E30900933A37 /* texture.png */; };
+		DDBBFFF314A6E30900933A37 /* texture.zwd in Resources */ = {isa = PBXBuildFile; fileRef = DDBBFFF014A6E30900933A37 /* texture.zwd */; };
+		DDBBFFF614A6E74F00933A37 /* MainLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFFF514A6E74F00933A37 /* MainLayer.mm */; };
+		DDBBFFF914A6E7C100933A37 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFFF814A6E7C100933A37 /* HelloWorldLayer.mm */; };
+		DDBBFFFC14A6EC1900933A37 /* Hodok.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFFFB14A6EC1900933A37 /* Hodok.mm */; };
+		DDBBFFFF14A6EC5400933A37 /* Common.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFFFE14A6EC5400933A37 /* Common.mm */; };
 		DDE9D09314A6CCD400346F27 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE9D09214A6CCD400346F27 /* QuartzCore.framework */; };
 		DDE9D09514A6CCD400346F27 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE9D09414A6CCD400346F27 /* OpenGLES.framework */; };
 		DDE9D09714A6CCD400346F27 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE9D09614A6CCD400346F27 /* OpenAL.framework */; };
@@ -196,7 +204,6 @@
 		DDE9D2C414A6CCD900346F27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE9D2C314A6CCD900346F27 /* main.m */; };
 		DDE9D2C714A6CCD900346F27 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDE9D2C614A6CCD900346F27 /* AppDelegate.mm */; };
 		DDE9D2CA14A6CCD900346F27 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE9D2C914A6CCD900346F27 /* RootViewController.m */; };
-		DDE9D2CD14A6CCD900346F27 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDE9D2CC14A6CCD900346F27 /* HelloWorldLayer.mm */; };
 		DDE9D2D014A6CCD900346F27 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDE9D2CF14A6CCD900346F27 /* GLES-Render.mm */; };
 		DDE9D2D214A6CCD900346F27 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE9D2D114A6CCD900346F27 /* blocks.png */; };
 		DDE9D2E314A6D74D00346F27 /* VPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE9D2DE14A6D74D00346F27 /* VPoint.m */; };
@@ -206,6 +213,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDBB000414A6EE6800933A37 /* B2DSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B2DSprite.h; sourceTree = "<group>"; };
+		DDBB000514A6EE6800933A37 /* B2DSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = B2DSprite.mm; sourceTree = "<group>"; };
+		DDBBFFEE14A6E30900933A37 /* texture.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = texture.plist; sourceTree = "<group>"; };
+		DDBBFFEF14A6E30900933A37 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		DDBBFFF014A6E30900933A37 /* texture.zwd */ = {isa = PBXFileReference; lastKnownFileType = file; path = texture.zwd; sourceTree = "<group>"; };
+		DDBBFFF414A6E74200933A37 /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayer.h; sourceTree = "<group>"; };
+		DDBBFFF514A6E74F00933A37 /* MainLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainLayer.mm; sourceTree = "<group>"; };
+		DDBBFFF714A6E7C100933A37 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		DDBBFFF814A6E7C100933A37 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
+		DDBBFFFA14A6EC1900933A37 /* Hodok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hodok.h; sourceTree = "<group>"; };
+		DDBBFFFB14A6EC1900933A37 /* Hodok.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Hodok.mm; sourceTree = "<group>"; };
+		DDBBFFFD14A6EC5400933A37 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		DDBBFFFE14A6EC5400933A37 /* Common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Common.mm; sourceTree = "<group>"; };
 		DDE9D08E14A6CCD400346F27 /* iRope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE9D09214A6CCD400346F27 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DDE9D09414A6CCD400346F27 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -562,8 +582,6 @@
 		DDE9D2C614A6CCD900346F27 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		DDE9D2C814A6CCD900346F27 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		DDE9D2C914A6CCD900346F27 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		DDE9D2CB14A6CCD900346F27 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		DDE9D2CC14A6CCD900346F27 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		DDE9D2CE14A6CCD900346F27 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		DDE9D2CF14A6CCD900346F27 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		DDE9D2D114A6CCD900346F27 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
@@ -595,6 +613,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDBBFFED14A6E2ED00933A37 /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				DDBBFFEE14A6E30900933A37 /* texture.plist */,
+				DDBBFFEF14A6E30900933A37 /* texture.png */,
+				DDBBFFF014A6E30900933A37 /* texture.zwd */,
+			);
+			name = texture;
+			sourceTree = "<group>";
+		};
 		DDE9D08314A6CCD400346F27 = {
 			isa = PBXGroup;
 			children = (
@@ -630,13 +658,22 @@
 		DDE9D0A214A6CCD400346F27 /* iRope */ = {
 			isa = PBXGroup;
 			children = (
+				DDBBFFF414A6E74200933A37 /* MainLayer.h */,
+				DDBBFFF514A6E74F00933A37 /* MainLayer.mm */,
+				DDBBFFFD14A6EC5400933A37 /* Common.h */,
+				DDBBFFFE14A6EC5400933A37 /* Common.mm */,
+				DDBB000414A6EE6800933A37 /* B2DSprite.h */,
+				DDBB000514A6EE6800933A37 /* B2DSprite.mm */,
+				DDBBFFFA14A6EC1900933A37 /* Hodok.h */,
+				DDBBFFFB14A6EC1900933A37 /* Hodok.mm */,
+				DDBBFFED14A6E2ED00933A37 /* texture */,
 				DDE9D2DC14A6D72600346F27 /* VRope */,
 				DDE9D2C514A6CCD900346F27 /* AppDelegate.h */,
 				DDE9D2C614A6CCD900346F27 /* AppDelegate.mm */,
+				DDBBFFF714A6E7C100933A37 /* HelloWorldLayer.h */,
+				DDBBFFF814A6E7C100933A37 /* HelloWorldLayer.mm */,
 				DDE9D2C814A6CCD900346F27 /* RootViewController.h */,
 				DDE9D2C914A6CCD900346F27 /* RootViewController.m */,
-				DDE9D2CB14A6CCD900346F27 /* HelloWorldLayer.h */,
-				DDE9D2CC14A6CCD900346F27 /* HelloWorldLayer.mm */,
 				DDE9D2CE14A6CCD900346F27 /* GLES-Render.h */,
 				DDE9D2CF14A6CCD900346F27 /* GLES-Render.mm */,
 				DDE9D0A314A6CCD400346F27 /* Resources */,
@@ -1283,6 +1320,9 @@
 				DDE9D21214A6CCD700346F27 /* ChangeLog in Resources */,
 				DDE9D2D214A6CCD900346F27 /* blocks.png in Resources */,
 				DDE9D2E714A6D76C00346F27 /* rope.png in Resources */,
+				DDBBFFF114A6E30900933A37 /* texture.plist in Resources */,
+				DDBBFFF214A6E30900933A37 /* texture.png in Resources */,
+				DDBBFFF314A6E30900933A37 /* texture.zwd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1436,11 +1476,15 @@
 				DDE9D2C414A6CCD900346F27 /* main.m in Sources */,
 				DDE9D2C714A6CCD900346F27 /* AppDelegate.mm in Sources */,
 				DDE9D2CA14A6CCD900346F27 /* RootViewController.m in Sources */,
-				DDE9D2CD14A6CCD900346F27 /* HelloWorldLayer.mm in Sources */,
 				DDE9D2D014A6CCD900346F27 /* GLES-Render.mm in Sources */,
 				DDE9D2E314A6D74D00346F27 /* VPoint.m in Sources */,
 				DDE9D2E414A6D74D00346F27 /* VRope.mm in Sources */,
 				DDE9D2E514A6D74D00346F27 /* VStick.m in Sources */,
+				DDBBFFF614A6E74F00933A37 /* MainLayer.mm in Sources */,
+				DDBBFFF914A6E7C100933A37 /* HelloWorldLayer.mm in Sources */,
+				DDBBFFFC14A6EC1900933A37 /* Hodok.mm in Sources */,
+				DDBBFFFF14A6EC5400933A37 /* Common.mm in Sources */,
+				DDBB000614A6EE6900933A37 /* B2DSprite.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1540,6 +1584,7 @@
 				DDE9D2D714A6CCD900346F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

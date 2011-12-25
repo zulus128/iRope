@@ -9,8 +9,9 @@
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
-#import "HelloWorldLayer.h"
+//#import "HelloWorldLayer.h"
 #import "RootViewController.h"
+#import "MainLayer.h"
 
 @implementation AppDelegate
 
@@ -92,7 +93,8 @@
 	
 	// create scene
 	CCScene *scene = [CCScene node];
-	[scene addChild:[HelloWorldLayer node]];
+//	[scene addChild:[HelloWorldLayer node]];
+	[scene addChild:[MainLayer node]];
 	
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: scene];
