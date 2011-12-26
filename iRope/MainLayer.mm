@@ -8,6 +8,7 @@
 
 #import "MainLayer.h"
 #import "Common.h"
+#import "VRope.h"
 
 //Pixel to metres ratio. Box2D uses metres as the unit for measurement.
 //This ratio defines how many pixels correspond to 1 Box2D "metre"
@@ -17,7 +18,7 @@
 @interface MainLayer()
 
 -(void) initPhysics;
--(void) addNewSpriteAtPosition:(CGPoint)p;
+//-(void) addNewSpriteAtPosition:(CGPoint)p;
 //-(void) createResetButton;
 
 @end
@@ -54,8 +55,29 @@
         [self addChild:spriteBatch z:0 tag:kTagParentNode];
         
         hodok = [[Hodok alloc] initWithLayer:self];
+        plate = [[Plate alloc] initWithLayer:self];
+        
+        // +++ Create box2d joint
+        b2RopeJointDef jd;
+        jd.bodyA = [hodok getBody]; //define bodies
+        jd.bodyB = [plate getBody];
+        jd.localAnchorA = b2Vec2(0,0); //define anchors
+        jd.localAnchorB = b2Vec2(0,0);
+        jd.maxLength= ([plate getBody]->GetPosition() - [hodok getBody]->GetPosition()).Length() * 2.0f;// / 2; //define max length of joint = current distance between bodies
+        [[Common instance] getWorld] ->CreateJoint(&jd); //create joint
         
         godir = hStop;
+        
+    
+        CCSpriteBatchNode* ropeSpriteSheet = [CCSpriteBatchNode batchNodeWithFile:@"rope.png" ];
+		[self addChild:ropeSpriteSheet];
+        
+        // +++ Init array that will hold references to all our ropes
+		vRopes = [[NSMutableArray alloc] init];
+        
+        // +++ Create VRope with two b2bodies and pointer to spritesheet
+        VRope *newRope = [[VRope alloc] init:[hodok getBody] body2:[plate getBody] spriteSheet:ropeSpriteSheet];
+        [vRopes addObject:newRope];
         
 //		CCSpriteBatchNode *parent = [CCSpriteBatchNode batchNodeWithFile:@"blocks.png" capacity:100];
 //		spriteTexture_ = [parent texture];
@@ -90,6 +112,29 @@
 	
 	[super dealloc];
 }	
+
+-(void) draw
+{
+	// Default GL states: GL_TEXTURE_2D, GL_VERTEX_ARRAY, GL_COLOR_ARRAY, GL_TEXTURE_COORD_ARRAY
+	// Needed states:  GL_VERTEX_ARRAY, 
+	// Unneeded states: GL_TEXTURE_2D, GL_COLOR_ARRAY, GL_TEXTURE_COORD_ARRAY
+//	glDisable(GL_TEXTURE_2D);
+//	glDisableClientState(GL_COLOR_ARRAY);
+//	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+//	
+//	world->DrawDebugData();
+//	
+//	// restore default GL states
+//	glEnable(GL_TEXTURE_2D);
+//	glEnableClientState(GL_COLOR_ARRAY);
+//	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+	
+	// +++ Update rope sprites
+	for(uint i=0;i<[vRopes count];i++) {
+		[[vRopes objectAtIndex:i] updateSprites];
+	}
+	
+}
 
 -(void) initPhysics {
 	
@@ -201,7 +246,14 @@
 	int32 velocityIterations = 8;
 	int32 positionIterations = 1;
 	
-	// Instruct the world to perform a single step of simulation. It is
+	
+    
+    // +++ Update rope physics
+	for(uint i=0;i<[vRopes count];i++) {
+		[[vRopes objectAtIndex:i] update:dt];
+	}
+    
+    // Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
 	[[Common instance] getWorld]->Step(dt, velocityIterations, positionIterations);	
     
@@ -217,6 +269,11 @@
 		
         CGSize s = [CCDirector sharedDirector].winSize;
         NSLog(@"touch x = %f, y = %f",location.x,location.y);
+        if (location.y > 250) {
+        
+            [plate goUp];
+            return;
+        }
         if (location.x > (s.width / 2)) {
             
             godir = hGoRight;

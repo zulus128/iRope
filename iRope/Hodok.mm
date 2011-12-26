@@ -10,7 +10,7 @@
 #import "cocos2d.h"
 #import "Common.h"
 #import "B2DSprite.h"
-#import "Box2D.h"
+//#import "Box2D.h"
 
 @implementation Hodok
 
@@ -64,6 +64,11 @@
         [sprite setPhysicsBody:body];
 	}
 	return self;	
+}
+
+- (b2Body*) getBody {
+    
+    return [sprite getBody];
 }
 
 - (void) goRight {

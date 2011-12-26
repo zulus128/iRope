@@ -1,8 +1,8 @@
 //
-//  Hodok.h
+//  Plate.h
 //  iRope
 //
-//  Created by вадим on 12/25/11.
+//  Created by Mac on 12/26/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
@@ -11,7 +11,8 @@
 @class CCLayer;
 @class B2DSprite;
 
-@interface Hodok : NSObject {
+
+@interface Plate : NSObject {
     
     CCLayer* lay;
     B2DSprite* sprite;
@@ -19,10 +20,8 @@
 
 - (id) initWithLayer: (CCLayer*) l; 
 
-- (void) goRight;
-- (void) goLeft;
-- (void) stop;
-
 - (b2Body*) getBody;
+
+- (void) goUp;
 
 @end
